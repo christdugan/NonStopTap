@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3990910B1D6105BF00432C46 /* DoubleRounder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3990910A1D6105BF00432C46 /* DoubleRounder.swift */; };
 		399421CA1CC6E86900427C02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399421C91CC6E86900427C02 /* AppDelegate.swift */; };
 		399421CC1CC6E86900427C02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399421CB1CC6E86900427C02 /* ViewController.swift */; };
 		399421CF1CC6E86900427C02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399421CD1CC6E86900427C02 /* Main.storyboard */; };
 		399421D11CC6E86900427C02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 399421D01CC6E86900427C02 /* Assets.xcassets */; };
 		399421D41CC6E86900427C02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 399421D21CC6E86900427C02 /* LaunchScreen.storyboard */; };
+		399421DD1CC6EC1C00427C02 /* Aurora.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 399421DC1CC6EC1C00427C02 /* Aurora.mp3 */; };
+		399421DF1CC6FE7700427C02 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399421DE1CC6FE7700427C02 /* Track.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3990910A1D6105BF00432C46 /* DoubleRounder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleRounder.swift; sourceTree = "<group>"; };
 		399421C61CC6E86900427C02 /* NonStopTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NonStopTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		399421C91CC6E86900427C02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		399421CB1CC6E86900427C02 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		399421D01CC6E86900427C02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		399421D31CC6E86900427C02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		399421D51CC6E86900427C02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		399421DC1CC6EC1C00427C02 /* Aurora.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Aurora.mp3; sourceTree = "<group>"; };
+		399421DE1CC6FE7700427C02 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,25 @@
 		399421C81CC6E86900427C02 /* NonStopTap */ = {
 			isa = PBXGroup;
 			children = (
+				399421DB1CC6EC1100427C02 /* DankBeats */,
 				399421C91CC6E86900427C02 /* AppDelegate.swift */,
 				399421CB1CC6E86900427C02 /* ViewController.swift */,
+				3990910A1D6105BF00432C46 /* DoubleRounder.swift */,
+				399421DE1CC6FE7700427C02 /* Track.swift */,
 				399421CD1CC6E86900427C02 /* Main.storyboard */,
 				399421D01CC6E86900427C02 /* Assets.xcassets */,
 				399421D21CC6E86900427C02 /* LaunchScreen.storyboard */,
 				399421D51CC6E86900427C02 /* Info.plist */,
 			);
 			path = NonStopTap;
+			sourceTree = "<group>";
+		};
+		399421DB1CC6EC1100427C02 /* DankBeats */ = {
+			isa = PBXGroup;
+			children = (
+				399421DC1CC6EC1C00427C02 /* Aurora.mp3 */,
+			);
+			name = DankBeats;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +141,7 @@
 			files = (
 				399421D41CC6E86900427C02 /* LaunchScreen.storyboard in Resources */,
 				399421D11CC6E86900427C02 /* Assets.xcassets in Resources */,
+				399421DD1CC6EC1C00427C02 /* Aurora.mp3 in Resources */,
 				399421CF1CC6E86900427C02 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3990910B1D6105BF00432C46 /* DoubleRounder.swift in Sources */,
 				399421CC1CC6E86900427C02 /* ViewController.swift in Sources */,
+				399421DF1CC6FE7700427C02 /* Track.swift in Sources */,
 				399421CA1CC6E86900427C02 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +268,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NonStopTap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ctd.NonStopTap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -259,6 +280,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = NonStopTap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ctd.NonStopTap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -284,6 +306,7 @@
 				399421DA1CC6E86900427C02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
